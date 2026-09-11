@@ -1,4 +1,4 @@
-export const isServerErrorResponse = (x: any): x is CustomError => x &&
+export const isServerErrorResponse = (x: any): x is ServerError => x &&
   typeof x === "object" &&
   false === Array.isArray(x) &&
   Object.keys(x).includes("message");

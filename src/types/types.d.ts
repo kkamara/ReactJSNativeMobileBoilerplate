@@ -71,3 +71,5 @@ type Loading = boolean;
 type GetHelloFromServer = () => Promise<void>;
 
 type StorageResponse = {};
+
+type ErrorType = string|null;
